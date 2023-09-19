@@ -192,8 +192,13 @@ input:invalid {
     color: red;
 }
 
+
 button:disabled {
     background-color: rgba(112, 112, 172, 0.637);
+}
+
+.error {
+    border-color: red;
 }
 
 
