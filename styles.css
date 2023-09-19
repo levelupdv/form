@@ -17,8 +17,8 @@ button,
 input,
 select,
 textarea {
-  font-family: inherit;
-  font-size: 100%;
+    font-family: inherit;
+    font-size: 100%;
 }
 
 /* To give the same size to several different widgets */
@@ -27,44 +27,31 @@ input,
 textarea,
 select,
 button {
-  width: 200px;
-  padding: 0;
-  margin: 0;
+    width: 200px;
+    padding: 0;
+    margin: 0;
 }
 
 #container {
     margin-top: 100px;
-    /* border: 1px solid yellowgreen; */
     height: 70%;
     display: flex;
-    width: 1400px;
+    width: 1200px;
 }
 
 #leftDiv {
-    /* border: 1px solid teal; */
     flex: 1.5;
     background-image: url(./images/caroline-lm-QA9fRIi6sFw-unsplash.jpg);
     background-size: cover;
-    background-position-x:center;
+    background-position-x: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-#rightDiv {
-    /* border: 1px solid red; */
-    flex: 2;
-    background-color: white;
-    /* padding: 40px; */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-
-}
 
 #leftDiv div {
     display: flex;
-    /* border: 1px solid burlywood; */
     margin-top: 200px;
     justify-content: center;
     align-items: center;
@@ -75,11 +62,9 @@ button {
 }
 
 footer {
-    /* margin-top: auto; */
     margin-bottom: 10px;
     align-self: center;
     font-size: 0.7rem;
-    /* border: 1px solid blue; */
     color: whitesmoke;
 }
 
@@ -95,31 +80,39 @@ div>img {
     height: 75px;
 }
 
+#rightDiv {
+    flex: 2;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
 header p {
     font-weight: bold;
-    padding: 100px 80px 0 80px;
-    /* margin-top: 50px; */
+    padding: 0 80px 0 80px;
 }
 
 label {
-    font-size: 0.5rem;
+    font-size: 0.4rem;
     font-weight: bold;
     letter-spacing: 1px;
     margin-top: 10px;
     color: #5a5a5a;
 }
 
-section {
+ul {
     display: flex;
-    flex-direction: column;
+    gap: 40px;
+    padding: 0 0 0 80px;
+
+    margin: 0;
 }
 
-form div {
+li {
     display: flex;
-    gap: 50px;
-    /* border: 1px solid black; */
-    padding: 0 0 30px 80px;
-    margin: 0;
+    flex-direction: column;
 }
 
 form>section:last-child {
@@ -128,26 +121,28 @@ form>section:last-child {
 
 h3 {
     padding: 0 0 0 80px;
-    /* border: 1px solid salmon; */
-    margin: 0;
 }
 
 form>div:first-child {
-    display: flex;
-    gap: 0;
-    flex-direction: column;
-    padding: 20px 0 0 0;
-    box-shadow: 0px 5px 13px 0px rgba(181,181,181,0.82);
+    box-shadow: 0px 5px 10px 0px rgba(181, 181, 181, 0.82);
+    padding: 0 0 20px 0;
 }
 
 input {
     border: 1px solid #E5E7EB;
     border-radius: 3px;
-    appearance: none;
     font-size: 12px;
     line-height: 1.5rem;
     padding: 2px 5px;
     outline: none;
+}
+
+input::placeholder {
+    font-size: 10px;
+}
+
+#inpContainer {
+    padding: 0 0 0 0;
 }
 
 button {
@@ -165,6 +160,7 @@ button {
 button:disabled {
     background-color: rgba(112, 112, 172, 0.637);
     width: 150px;
+    transform: scale(-1, -1);
 }
 
 button+p {
@@ -178,9 +174,9 @@ p>a {
 }
 
 input:focus {
-    box-shadow: 3px 3px 5px 0px rgba(180,180,180,0.80);
+    box-shadow: 3px 3px 5px 0px rgba(180, 180, 180, 0.80);
     border-color: rgb(112, 112, 172);
-    
+
 }
 
 input:invalid {
@@ -194,7 +190,7 @@ input:invalid {
 .errMsg::after {
     position: absolute;
     content: "* Passwords do not match";
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     color: red;
 }
 
@@ -203,8 +199,3 @@ input:invalid {
 .error {
     border-color: red;
 }
-
-
-
-
-

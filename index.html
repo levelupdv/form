@@ -34,31 +34,45 @@
             </header>
             <form action="">
                 <div>
-                <h3>Let's do this!</h2>
-                    <div>
-                        <section>
-                            <label for="fname">FIRST NAME</label>
-                            <input type="text" name="fname" id="fname" placeholder="john">
-                            <label for="mail">EMAIL</label>
-                            <input type="email" name="mail" id="mail" placeholder="email@example.com">
-                            <label for="pwd">PASSWORD</label>
-                            <input type="password" name="pwd" id="pwd">
-                            <span id="msg"></span>
-                        </section>
-                        <section>
-                            <label for="lname">LAST NAME</label>
-                            <input type="text" name="lname" id="lname" placeholder="Doe">
-                            <label for="tel">PHONE NUMBER</label>
-                            <input type="tel" name="tel" id="tel" placeholder="+971501234567">
-                            <label for="confPwd">CONFIRM PASSWORD</label>
-                            <input type="password" name="confPwd" id="confPwd">
-                        </section>
-                    </div>
+                    <h3>Let's do this!</h2>
+                        <div id="inpContainer">
+                            <ul>
+                                <li>
+                                    <label for="fname">FIRST NAME</label>
+                                    <input type="text" name="fname" id="fname" placeholder="john">
+                                </li>
+                                <li>
+                                    <label for="lname">LAST NAME</label>
+                                    <input type="text" name="lname" id="lname" placeholder="Doe">
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <label for="mail">EMAIL</label>
+                                    <input type="email" name="mail" id="mail" placeholder="email@example.com">
+                                </li>
+                                <li>
+                                    <label for="tel">PHONE NUMBER</label>
+                                    <input type="tel" name="tel" id="tel" placeholder="+971501234567">
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <label for="pwd">PASSWORD</label>
+                                    <input type="password" name="pwd" id="pwd">
+                                    <span id="msg"></span>
+                                </li>
+                                <li>
+                                    <label for="confPwd">CONFIRM PASSWORD</label>
+                                    <input type="password" name="confPwd" id="confPwd">
+                                </li>
+                            </ul>
+                        </div>
                 </div>
-                    <section>
-                        <button type="submit" id="submit">Create Account</button>
-                        <p>Already have an account? <a href="">Log in</a></p>
-                    </section>
+                <section>
+                    <button type="submit" id="submit">Create Account</button>
+                    <p>Already have an account? <a href="">Log in</a></p>
+                </section>
             </form>
         </div>
     </div>
