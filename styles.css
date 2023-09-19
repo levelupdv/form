@@ -19,15 +19,7 @@ select,
 textarea {
     font-family: inherit;
     font-size: 100%;
-}
-
-/* To give the same size to several different widgets */
-
-input,
-textarea,
-select,
-button {
-    width: 200px;
+    width: 250px;
     padding: 0;
     margin: 0;
 }
@@ -36,7 +28,7 @@ button {
     margin-top: 100px;
     height: 70%;
     display: flex;
-    width: 1200px;
+    width: 1400px;
 }
 
 #leftDiv {
@@ -89,13 +81,18 @@ div>img {
 
 }
 
+form {
+    margin-bottom: 200px;
+}
+
 header p {
     font-weight: bold;
     padding: 0 80px 0 80px;
+    font-size: 1.2rem;
 }
 
 label {
-    font-size: 0.4rem;
+    font-size: 0.5rem;
     font-weight: bold;
     letter-spacing: 1px;
     margin-top: 10px;
@@ -138,7 +135,7 @@ input {
 }
 
 input::placeholder {
-    font-size: 10px;
+    font-size: 12px;
 }
 
 #inpContainer {
@@ -160,6 +157,7 @@ button {
 button:disabled {
     background-color: rgba(112, 112, 172, 0.637);
     width: 150px;
+    font-size: 10px;
     transform: scale(-1, -1);
 }
 
@@ -190,7 +188,7 @@ input:invalid {
 .errMsg::after {
     position: absolute;
     content: "* Passwords do not match";
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     color: red;
 }
 
