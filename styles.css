@@ -143,6 +143,11 @@ form>div:first-child {
 input {
     border: 1px solid #E5E7EB;
     border-radius: 3px;
+    appearance: none;
+    font-size: 12px;
+    line-height: 1.5rem;
+    padding: 2px 5px;
+    outline: none;
 }
 
 button {
@@ -165,6 +170,33 @@ p>a {
     color: rgb(112, 112, 172);
     font-weight: bold;
 }
+
+input:focus {
+    box-shadow: 3px 3px 5px 0px rgba(180,180,180,0.80);
+    border-color: rgb(112, 112, 172);
+    
+}
+
+input:invalid {
+    border-color: red;
+}
+
+#errMsg {
+    position: relative;
+}
+
+.errMsg::after {
+    position: absolute;
+    content: "* Passwords do not match";
+    font-size: 0.6rem;
+    color: red;
+}
+
+button:disabled {
+    background-color: rgba(112, 112, 172, 0.637);
+}
+
+
 
 
 
